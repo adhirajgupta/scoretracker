@@ -12,7 +12,7 @@ return(
 <View>
 <AppHeader1/>
 <TouchableOpacity style={styles.button} onPress={this.goToScoreScreen}>
-<Text>Score Tracker</Text>
+<Text style={styles.buttonText}>Score Tracker</Text>
 </TouchableOpacity>
 </View>
 )
@@ -22,15 +22,20 @@ return(
 
 const styles = StyleSheet.create({
 button:{
-marginTop: -55,
-marginLeft: 130,
+marginTop: 55,
+marginLeft: 45,
 borderWidth: 2,
 borderColor: 'yellow',
 alignItems: 'center',
 justifyContent: 'center',
 width: 250,
 height: 100,
-color:'yellow'
+backgroundColor:'yellow',
 },   
+
+buttonText:{
+  fontSize:25,
+  fontWeight:'bold',
+}
 
 })

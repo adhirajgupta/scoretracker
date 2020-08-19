@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Text, View, StyleSheet} from 'react-native';
 
-class AppHeader1 extends React.Component {
+class AppHeader2 extends React.Component {
 render() {
 return (
 <View style = {styles.textContainer}>
-<Text style = {styles.text}>Score Counter</Text>
+<Text style = {styles.text}>Counter</Text>
 </View>
 
 );
@@ -20,10 +20,10 @@ padding:10,
 },
 text: {
 fontWeight: 'bold',
-fontSize: 30,
+fontSize: 25,
 color:'white',
 textAlign:'center',
 padding:20, 
 }
 });
-export default AppHeader1;
+export default AppHeader2;

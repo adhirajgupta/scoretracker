@@ -21,7 +21,6 @@ await Audio.Sound.createAsync(
 render(){
 return(
 <View>
-<TouchableOpacity style={styles.button} onPress={
 <ScrollView>  
 <View>
 <AppHeader/>
@@ -31,12 +30,10 @@ return(
 <Player4/>
 <Player5/>
 <Player6/>
-<Button style={{backgroundColor:'black'}} title="Press for music" onPress={this.playSound(true)}/>
-<Button title="Stop music" onPress={(this.playSound(false))}/> 
+<Button color={'violet'} title="Press for music" onPress={this.playSound}/>
+<Button color={'#B5651D'}title="Stop music" onPress={this.playSound}/> 
 </View>
 </ScrollView>
-}>
-</TouchableOpacity>
 </View>
 )
 }
